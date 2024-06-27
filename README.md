@@ -1,4 +1,4 @@
-# Welcome to Google Specific Projects Landing Page!
+# Welcome to Google's Generative AI Projects Landing Page!
 
 
 Hey there! 👋 I'm Manu Bharadwaj. If you find this project useful or interesting, don't forget to give it a ⭐️!
