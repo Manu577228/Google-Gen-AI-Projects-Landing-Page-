@@ -1,0 +1,122 @@
+body {
+  font-family: "VT323", monospace;
+  margin: 0;
+  padding: 0;
+  color: #000 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: transparent;
+  color: #000;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header h1 {
+  background: linear-gradient(to right, green, red, blue, yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000 !important;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "VT323", monospace;
+  font-weight: bold;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffd700;
+  color: #333;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+nav span {
+  background: linear-gradient(to right, green, red, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: rgb(202, 12, 75);
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  display: block;
+  opacity: 0.8;
+  margin-left: 150px;
+}
+
+main {
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+footer {
+  background-color: transparent;
+  color: linear-gradient(to right, green, red, blue, yellow);
+  text-align: center;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: -40px;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  footer {
+    position: relative;
+    bottom: 40px;
+  }
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
